@@ -1,0 +1,22 @@
+.btn, .btn-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 0;
+  margin-inline: auto;
+  border-radius: 3.5rem;
+  color: var(--clr-white);
+  font: 700 2.2rem/2.578rem "Roboto", sans-serif;
+  background-color: var(--clr-green);
+  inline-size: 100%;
+}
+
+.btn-home {
+  inline-size: 19.9rem;
+  block-size: 3.6rem;
+}
+
+.btn:hover, .btn-home:hover {
+  color: var(--clr-black);
+  background-color: var(--clr-yellow);
+}
