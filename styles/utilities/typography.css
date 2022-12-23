@@ -1,0 +1,27 @@
+.font-bold-xxl {
+  font: 700 5.3rem/6.2rem "Roboto", sans-serif;
+}
+
+.font-bold-xl {
+  font: 700 3rem/3.5rem "Roboto", sans-serif;
+}
+
+.font-bold-l {
+  font: 700 2.4rem/2.8rem "Roboto", sans-serif;
+}
+
+.font-normal-m {
+  font: 400 1.8rem/2.1rem "Roboto", sans-serif;
+}
+
+.font-bold-s {
+  font: 700 1.6rem/1.875rem "Roboto", sans-serif;
+}
+
+.font-normal-s {
+  font: 400 1.6rem/1.875rem "Roboto", sans-serif;
+}
+
+.font-normal-s-radio {
+  font: 400 1.6rem/2.1rem "Roboto", sans-serif;
+}
