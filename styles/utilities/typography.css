@@ -25,3 +25,33 @@
 .font-normal-s-radio {
   font: 400 1.6rem/2.1rem "Roboto", sans-serif;
 }
+
+@media (min-width: 1280px) {
+  .font-bold-xxl {
+    font: 700 11.1rem/13rem "Roboto", sans-serif;
+  }
+  
+  .font-bold-xl {
+    font: 700 3.9rem/4.57rem "Roboto", sans-serif;
+  }
+  
+  .font-bold-l {
+    font: 700 2.9rem/3.4rem "Roboto", sans-serif;
+  }
+  
+  .font-normal-m {
+    font: 400 2.8rem/3.28rem "Roboto", sans-serif;
+  }
+  
+  .font-bold-s {
+    font: 700 2.6rem/3.2rem "Roboto", sans-serif;
+  }
+  
+  .font-normal-s {
+    font: 400 2.6rem/3.2rem "Roboto", sans-serif;
+  }
+  
+  .font-normal-s-radio {
+    font: 400 2.6rem/4.2rem "Roboto", sans-serif;
+  }
+}
