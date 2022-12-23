@@ -26,7 +26,7 @@
   font: 400 1.6rem/2.1rem "Roboto", sans-serif;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1080px) {
   .font-bold-xxl {
     font: 700 11.1rem/13rem "Roboto", sans-serif;
   }
