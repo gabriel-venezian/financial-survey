@@ -1,6 +1,7 @@
 :root {
   --clr-white: #FFF;
   --clr-black: #000;
+  --clr-yellow: #FFFF7D;
   --clr-green: #3EB25E;
   --clr-green-transparent: rgba(62, 178, 94, 0.3);
 }
@@ -19,4 +20,8 @@
 
 .clr-green-transparent {
   color: var(--clr-green-transparent);
+}
+
+.clr-yellow {
+  color: var(--clr-yellow);
 }
