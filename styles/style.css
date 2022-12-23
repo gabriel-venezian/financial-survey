@@ -1,0 +1,25 @@
+/* First to load */
+@import url("./global/global.css");
+@import url("./utilities/typography.css");
+@import url("./utilities/colors.css");
+
+/* Utilities */
+@import url("./utilities/components.css");
+
+/* Home */
+@import url("./home/home.css");
+
+/* Start Survey */
+@import url("./start-survey/start-survey.css");
+
+/* Step 1 */
+@import url("./step-1/step-1.css");
+
+/* Step 2 */
+@import url("./step-2/step-2.css");
+
+/* Step 3 */
+@import url("./step-3/step-3.css");
+
+/* Step 4 */
+@import url("./step-4/step-4.css");
