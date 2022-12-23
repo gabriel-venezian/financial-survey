@@ -1,9 +1,10 @@
-.btn, .btn-home {
+.btn, .btn-home, .btn-sm {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-block: 0;
   margin-inline: auto;
+  padding-block: .8rem;
   border-radius: 3.5rem;
   color: var(--clr-white);
   font: 700 2.2rem/2.578rem "Roboto", sans-serif;
@@ -16,7 +17,17 @@
   block-size: 3.6rem;
 }
 
-.btn:hover, .btn-home:hover {
+.btn-sm {
+  font: 700 1.6rem/1.8rem "Roboto", sans-serif;
+}
+
+.btn:hover, .btn-home:hover, .btn-sm:hover {
   color: var(--clr-black);
   background-color: var(--clr-yellow);
+}
+
+@media (min-width: 1080px) {
+  .btn-sm {
+    font: 700 2.2rem/2.6rem "Roboto", sans-serif;
+  }
 }
