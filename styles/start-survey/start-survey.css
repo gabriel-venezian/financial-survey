@@ -1,0 +1,95 @@
+.start-survey {
+  max-inline-size: 48rem;
+  margin: 0 auto;
+}
+
+.start-survey-container {
+  padding-inline: 3.2rem;
+}
+
+.start-survey-container img {
+  margin-block-start: 5.1rem;
+  margin-block-end: 2.78rem;
+}
+
+.start-survey-container h2, p, a {
+  text-align: center;
+}
+
+.start-survey-container h2 {
+  margin-inline: auto;
+  margin-block-end: 2.2rem;
+}
+
+.start-survey-container p {
+  max-inline-size: 33ch;
+  margin-inline: auto;
+  margin-block-end: 2.4rem;
+}
+
+.start-survey-container .start-survey-cta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+
+.start-survey-container .start-survey-cta .btn-sm {
+  width: 14.2rem;
+  margin-inline: 0;
+}
+
+@media (min-width: 1080px) {
+  .start-survey {
+    max-inline-size: 128rem;
+    margin: 0 auto;
+  }
+
+  .start-survey-container {
+    display: grid;
+    grid-template-rows: 33.8rem 23.3rem auto;
+    grid-template-columns: 55.251rem auto;
+  }
+
+  .start-survey-container img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    inline-size: 55.2rem;
+    block-size: 48rem;
+    margin-block-start: 14.6rem;
+    margin-inline-start: 0;
+  }
+
+  .start-survey-container h2 {
+    grid-row: 1;
+    grid-column: 2;
+    inline-size: 26ch;
+    margin-inline: auto;
+    inline-size: fit-content;
+    margin-block-start: 22.3rem;
+    margin-block-end: 1.4rem;
+    max-inline-size: 20ch;
+  }
+
+  .start-survey-container p {
+    grid-row: 2;
+    grid-column: 2;
+    inline-size: 28ch;
+    margin-block-end: 3.5rem;
+  }
+
+  .start-survey-container .start-survey-cta {
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    width: 100%;
+    gap: 2.8rem;
+    margin-inline: auto;
+  }
+
+  .start-survey-container .start-survey-cta .btn-sm {
+    block-size: 3.6rem;
+    min-inline-size: 20rem;
+    padding: 0;
+  } 
+}
