@@ -1,0 +1,22 @@
+:root {
+  --clr-white: #FFF;
+  --clr-black: #000;
+  --clr-green: #3EB25E;
+  --clr-green-transparent: rgba(62, 178, 94, 0.3);
+}
+
+.clr-white {
+  color: var(--clr-white);
+}
+
+.clr-black {
+  color: var(--clr-black);
+}
+
+.clr-green {
+  color: var(--clr-green);
+}
+
+.clr-green-transparent {
+  color: var(--clr-green-transparent);
+}
