@@ -1,3 +1,8 @@
+.home {
+  max-inline-size: 48rem;
+  margin-inline: auto;
+}
+
 .home-container img {
   margin-block-start: 5.6rem;
   margin-block-end: 2.5rem;
@@ -17,7 +22,21 @@
   block-size: 4.7rem;
 }
 
+@media (max-width: 478px) {
+  .home-container {
+    padding-inline: 2rem;
+  }
+  
+  .home-container img {
+    margin-inline: auto;
+  }
+}
+
 @media (min-width: 1080px) {
+  .home {
+    max-inline-size: 128rem;
+  }
+
   .home-container {
     display: grid;
     grid-template-rows: 40.5rem 11.3rem auto;
