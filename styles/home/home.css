@@ -44,8 +44,7 @@
     grid-template-columns: 43.1rem auto;
     column-gap: 8rem;
     row-gap: 0;
-    margin-inline-start: 21.2rem;
-    margin-inline-end: 8.4rem;
+    margin-inline: auto;
   }
 
   .home-container img {
@@ -76,4 +75,11 @@
     grid-row: 3;
     grid-column: 2;
   } 
+}
+
+@media (min-width: 1280px) {
+  .home-container {
+    margin-inline-start: 21.2rem;
+    margin-inline-end: 8.4rem;
+  }
 }
