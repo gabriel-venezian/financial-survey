@@ -10,7 +10,7 @@ Desktop Preview            |  Mobile Preview
 
 Clone this repository:
 ``` sh
-git@github.com:gabriel-venezian/financial-survey.git
+git clone git@github.com:gabriel-venezian/financial-survey.git
 ```
 
 Simply open the <a href="https://github.com/gabriel-venezian/financial-survey/blob/main/index.html" target="_blank">index.html</a> file in your browser. You can also run it through the VSCode `Live Server` extension.
