@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Survey - Step 4</title>
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="step step-4">
+    <div class="step-container step-4-container">
+      <img src="./images/illustration-step-4.svg" alt="">
+      <form action="./step-4.html" id="step_4_form" autocomplete="off">
+        <label class="font-bold-s" for="full_name">Full name:</label>
+        <input class="font-normal-s" type="text" name="name" id="full_name" placeholder="John Doe" required>
+
+        <label class="font-bold-s" for="email">Email:</label>
+        <input class="font-normal-s" type="email" name="email" id="email" placeholder="name@example.com" required>
+
+        <label class="font-bold-s" for="age">Age</label>
+        <input class="font-normal-s" type="number" name="age" id="age" min="16" max="100" placeholder="-- --" required>
+
+        <nav>
+          <a class="btn-sm" href="./step-3.html">Back</a>
+          <input type="submit" class="btn-sm" href="./finished-survey.html" value="Submit"></a>
+        </nav>
+      </form>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="./scripts/global/global.js"></script>
+  <script type="text/javascript" src="./scripts/step-4/step-4.js"></script>
+</body>
+
+</html>

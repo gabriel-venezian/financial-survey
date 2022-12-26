@@ -68,6 +68,7 @@
 .btn-sm:hover {
   color: var(--clr-black);
   background-color: var(--clr-yellow);
+  border: none;
 }
 
 /* select-wrapper */

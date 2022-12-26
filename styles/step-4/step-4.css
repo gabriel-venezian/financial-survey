@@ -1,0 +1,89 @@
+.step-4-container img {
+  margin-block-start: 4.7rem;
+  margin-block-end: 1.8rem;
+}
+
+.step-4-container form label {
+  display: block;
+  margin-block-end: .4rem;
+}
+
+.step-4-container form input {
+  padding-inline: 1.2rem;
+  padding-block: .6rem;
+  border: 1px solid #BFBFBF;
+  border-radius: 2rem;
+  inline-size: 25.2rem;
+}
+
+.step-4-container form input:nth-child(6) {
+  inline-size: 8.5rem;
+}
+
+.step-4-container form input::placeholder {
+  color: #BFBFBF;
+}
+
+.step-4-container form input + label {
+  margin-block-start: 1rem;
+}
+
+.step-4-container form nav {
+  margin-block-start: 3.4rem;
+}
+
+.step-4-container form nav .btn-sm {
+  inline-size: 30.2rem;
+}
+
+@media (max-width: 314px) {
+  .step-4-container form input {
+    inline-size: fit-content;
+  }
+  
+  .step-4-container form input:nth-child(6) {
+    inline-size: 8.5rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .step-4 .step-4-container {
+    grid-template-rows: 30.2rem 25.4rem auto;
+    gap: 11.4rem;
+  }
+
+  .step-4-container img {
+    block-size: 52.801rem;
+  }
+
+  .step-4-container form {
+    max-inline-size: 51.1rem;
+    margin-block-start: 17.7rem;
+  }
+
+  .step-4-container form label {
+    margin-block-end: 1.8rem;
+  }
+
+  .step-4-container form input + label {
+    margin-block-start: 2.4rem;
+  }
+
+  .step-4-container form input {
+    inline-size: 41.3rem;
+    padding-inline: 2rem;
+    block-size: 4rem;
+  }
+  
+  .step-4-container form input:nth-child(6) {
+    inline-size: 12.6rem;
+  }
+
+  .step-4-container form nav {
+    margin-block-start: 4.4rem;
+  }
+
+  .step-4-container form nav .btn-sm {
+    inline-size: 41.8rem;
+  }
+}
