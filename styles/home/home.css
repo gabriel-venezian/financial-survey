@@ -23,6 +23,10 @@
   height: fit-content;
 }
 
+.home-container .btn-home {
+  padding: 0;
+} 
+
 @media (max-width: 478px) {
   .home-container {
     padding-inline: 2rem;
@@ -76,7 +80,6 @@
     grid-row: 3;
     grid-column: 2;
     height: 3.6rem;
-    padding: 0;
   } 
 }
 
