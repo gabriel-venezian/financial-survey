@@ -1,11 +1,6 @@
 .step-1-container img {
   margin-block-start: 6.1rem;
   margin-block-end: 2.1rem;
-  margin-inline-start: 4.4rem;
-}
-
-.step-1-container form {
-  max-inline-size: 32.6rem;
 }
 
 .step-1-container form .select-wrapper {

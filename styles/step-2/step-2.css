@@ -1,0 +1,60 @@
+.step-2-container img {
+  margin-block-start: 5.1rem;
+  margin-block-end: 1.585rem;
+}
+
+.step-2-container form .select-wrapper {
+  margin-block-end: 1rem;
+}
+
+.step-2-container form .select-wrapper label,
+.step-2-container form .training-resources legend {
+  margin-block-end: .4rem;
+}
+
+.step-2-container form .training-resources {
+  margin-block-end: 2.1rem;
+}
+
+.step-2-container form .training-resources legend {
+  max-inline-size: 26ch;
+}
+
+@media (max-width: 249px) {
+  .step-2-container form .select-wrapper::before {
+    inset-block-start: 4.7rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .step-2 .step-2-container {
+    grid-template-rows: 30.2rem 25.4rem auto;
+  }
+
+  .step-2-container img {
+    block-size: 52.801rem;
+  }
+
+  .step-2-container form {
+    max-inline-size: 51.1rem;
+    margin-block-start: 17.3rem;
+  }
+
+  .step-2-container form .select-wrapper {
+    grid-row: 1;
+    grid-column: 2;
+    margin-block-end: 2.9rem;
+  }
+
+  .step-2-container form .select-wrapper label {
+    margin-block-end: 1.6rem;
+  }
+
+  .step-2-container form .training-resources {
+    margin-block-end: 3.2rem;
+  }
+
+  .step-2-container form .training-resources legend {
+    margin-block-end: 1.2rem;
+  }
+}

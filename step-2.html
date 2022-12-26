@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Survey - Step 2</title>
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="step step-2">
+    <div class="step-container step-2-container">
+      <img src="./images/illustration-step-2.svg" alt="">
+      <form action="./step-3.html" id="step_2_form">
+        <div class="select-wrapper">
+          <label class="font-bold-s" for="investment_decided">How do you decide to invest?</label>
+          <select class="font-normal-s investment_decided resizable-select" name="investment-decided" id="investment_decided" required>
+            <option value="I have not invested yet." selected>I have not invested yet.</option>
+            <option value="Through a friend's advice.">Through a friend's advice.</option>
+            <option value="I want to build a retirement plan.">I want to build a retirement plan.</option>
+          </select>
+        </div>
+
+        <fieldset class="training-resources">
+          <legend class="font-bold-s">What resources have you used or are you using for your training?</legend>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="books-articles" id="books_articles" required>
+            <label class="font-normal-s" for="books_articles">Books and articles</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="youtube-videos" id="youtube_videos" required>
+            <label class="font-normal-s" for="youtube_videos">YouTube tutorial videos</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="online-courses" id="online_courses" required>
+            <label class="font-normal-s" for="online_courses">Online or face to face courses</label>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" name="investment-experience" id="investment_experience" required>
+            <label class="font-normal-s" for="investment_experience">Experience with little investment</label>
+          </div>
+        </fieldset>
+
+        <nav>
+          <a class="btn-sm" href="./step-1.html">Back</a>
+          <input type="submit" class="btn-sm" href="./step-3.html" value="Next"></a>
+          <a class="btn-sm" onclick="skipStep(document.URL)" href="./step-3.html">Skip</a>
+        </nav>
+      </form>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="./scripts/global/global.js"></script>
+  <script type="text/javascript" src="./scripts/step-2/step-2.js"></script>
+</body>
+
+</html>
