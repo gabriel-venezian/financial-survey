@@ -9,7 +9,10 @@ function getTextWidth(text, font) {
 
 /* Resize Select */
 window.addEventListener("resize", () => {
-  resizeSelect(document.querySelector("select"));
+  let selectInput = document.querySelector("select");
+
+  if (selectInput)
+    resizeSelect(selectInput);
 })
 
 document.querySelectorAll("select").forEach(resizeSelect);

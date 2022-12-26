@@ -43,4 +43,14 @@
     margin-block-end: 6.2rem;
     font: 400 1.6rem/1.6rem "Roboto", sans-serif;
   }
+
+  .step-3-container form textarea {
+    inline-size: 42.9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .step-3 .step-3-container {
+    column-gap: 9.2rem;
+  }
 }
