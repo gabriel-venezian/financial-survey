@@ -2,7 +2,9 @@
 
 Help us to find the reasons for the failure of people in financial market. Answer the survey and get exclusive content from our experts.
 
-<img src="./images/thumbnail.jpg" alt="Project screenshot" width="400px">
+Desktop Preview            |  Mobile Preview
+:-------------------------:|:-------------------------:
+<img src="./images/thumbnail/thumbnail-desktop.jpg" alt="Project desktop screenshot" height="500px"> | <img src="./images/thumbnail/thumbnail-mobile.jpg" alt="Project mobile screenshot" height="500px">
 
 ## How to run
 
