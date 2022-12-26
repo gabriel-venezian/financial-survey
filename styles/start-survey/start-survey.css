@@ -54,8 +54,8 @@
   .start-survey-container img {
     grid-row: 1 / -1;
     grid-column: 1;
-    inline-size: 55.2rem;
-    block-size: 48rem;
+    inline-size: 55.251rem;
+    block-size: 48.001rem;
     margin-block-start: 14.6rem;
     margin-inline-start: 0;
   }
@@ -92,4 +92,15 @@
     min-inline-size: 20rem;
     padding: 0;
   } 
+}
+
+@media (min-width: 1280px) {
+  .start-survey-container {
+    grid-template-columns: 64rem auto;
+    padding-inline: 0;
+  }
+
+  .start-survey-container img {
+    margin-inline-start: 8.749rem;
+  }
 }

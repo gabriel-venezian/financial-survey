@@ -46,7 +46,7 @@ function resizeSelect(sel) {
 /* Skip Step */
 function skipStep(currentUrl) {
   let currentStep = `step${parseInt(currentUrl.split("step-")[1])}`;
-  let surveyAnswers = JSON.parse(localStorage.getItem("survey-answers")); // != null
+  let surveyAnswers = JSON.parse(localStorage.getItem("survey-answers"));
 
   if (surveyAnswers != null) {
     surveyAnswers[currentStep].skipped = true;
