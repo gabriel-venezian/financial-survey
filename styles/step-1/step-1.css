@@ -1,8 +1,3 @@
-.step-1 {
-  max-inline-size: 48rem;
-  margin-inline: auto;
-}
-
 .step-1-container img {
   margin-block-start: 6.1rem;
   margin-block-end: 2.1rem;
@@ -11,7 +6,6 @@
 
 .step-1-container form {
   max-inline-size: 32.6rem;
-  margin-inline: auto;
 }
 
 .step-1-container form .select-wrapper {
@@ -20,31 +14,11 @@
 
 .step-1-container form .select-wrapper label,
 .step-1-container form legend {
-  display: inline-block;
   margin-block-end: .3rem;
 }
 
 .step-1-container form .financial-market {
   margin-block-end: 2.4rem;
-}
-
-.step-1-container form nav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  column-gap: 1.8rem;
-  row-gap: 1rem;
-  max-inline-size: 30.2rem;
-}
-
-.step-1-container form nav a, 
-.step-1-container form nav input {
-  inline-size: calc(50% - 0.9rem);
-  margin: 0;
-}
-
-.step-1-container form nav a:nth-child(3) {
-  inline-size: 100%;
 }
 
 @media (max-width: 294px) {
@@ -53,45 +27,18 @@
   }
 }
 
-@media (max-width: 478px) {
-  .step-1-container {
-    padding-inline: 2rem;
-  }
-
-  .step-1-container img {
-    margin-inline: auto;
-  }
-}
-
 @media (min-width: 1080px) {
-  .step-1 {
-    max-inline-size: 108rem;
-    margin-inline: auto;
-  }
-
   .step-1 .step-1-container {
-    display: grid;
     grid-template-rows: 27.5rem 23rem auto;
-    grid-template-columns: 49.65rem auto;
-    column-gap: 4rem;
   }
 
   .step-1-container img {
-    inline-size: 55.251rem;
     block-size: 52.801rem;
-    grid-row: 1 / -1;
-    grid-column: 1;
-    margin-block-start: 9.8rem;
-    margin-block-end: 0;
-    margin-inline-start: 0;
   }
 
   .step-1-container form {
-    grid-row: 1 / -1;
-    grid-column: 2;
     max-inline-size: 51.1rem;
     margin-block-start: 14.1rem;
-    margin-inline: 0;
   }
 
   .step-1-container form .select-wrapper {
@@ -110,32 +57,5 @@
 
   .step-1-container form .financial-market legend {
     margin-block-end: .6rem;
-  }
-
-  .step-1-container form nav {
-    column-gap: 2.7rem;
-    row-gap: 1.5rem;
-    max-inline-size: 41.8rem;
-  }
-  
-  .step-1-container form nav .btn-sm  {
-    block-size: 3.6rem;
-    inline-size: calc(50% - 1.35rem);
-    padding: 0;
-  }
-}
-
-@media (min-width: 1280px) {
-  .step-1 {
-    max-inline-size: 128rem;
-  }
-
-  .step-1 .step-1-container {
-    grid-template-columns: 64rem auto;
-    column-gap: 9.4rem
-  }
-
-  .step-1-container img {
-    margin-inline-start: 8.794rem;
   }
 }

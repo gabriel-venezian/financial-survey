@@ -1,3 +1,36 @@
+.step {
+  max-inline-size: 48rem;
+  margin-inline: auto;
+}
+
+.step-container form {
+  margin-inline: auto;
+}
+
+.step-container form legend,
+.step-container form .select-wrapper label {
+  display: inline-block;
+}
+
+.step-container form nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 1.8rem;
+  row-gap: 1rem;
+  max-inline-size: 30.2rem;
+}
+
+.step-container form nav a, 
+.step-container form nav input {
+  inline-size: calc(50% - 0.9rem);
+  margin: 0;
+}
+
+.step-container form nav a:nth-child(3) {
+  inline-size: 100%;
+}
+
 .btn, .btn-home, .btn-sm {
   display: flex;
   align-items: center;
@@ -84,7 +117,55 @@
   background: #3EB25E;
 }
 
+@media (max-width: 478px) {
+  .step-container {
+    padding-inline: 2rem;
+  }
+
+  .step .step-container img {
+    margin-inline: auto;
+  }
+}
+
 @media (min-width: 1080px) {
+  .step {
+    max-inline-size: 108rem;
+    margin-inline: auto;
+  }
+
+  .step .step-container {
+    display: grid;
+    grid-template-columns: 49.65rem auto;
+    column-gap: 4rem;
+  }
+
+  .step .step-container img {
+    inline-size: 55.251rem;
+    grid-row: 1 / -1;
+    grid-column: 1;
+    margin-block-start: 9.8rem;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+  }
+
+  .step-container form {
+    margin-inline: 0;
+    grid-row: 1 / -1;
+    grid-column: 2;
+  }
+
+  .step-container form nav {
+    column-gap: 2.7rem;
+    row-gap: 1.5rem;
+    max-inline-size: 41.8rem;
+  }
+  
+  .step-container form nav .btn-sm  {
+    block-size: 3.6rem;
+    inline-size: calc(50% - 1.35rem);
+    padding: 0;
+  }
+
   .btn-sm {
     font: 700 2.2rem/2.6rem "Roboto", sans-serif;
   }
@@ -121,5 +202,21 @@
     inset-block: .3rem;
     block-size: 2.5rem;
     inline-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .step {
+    max-inline-size: 128rem;
+    margin-inline: auto;
+  }
+
+  main.step .step-container {
+    grid-template-columns: 64rem auto;
+    column-gap: 9.4rem
+  }
+
+  main.step .step-container img {
+    margin-inline-start: 8.794rem;
   }
 }
