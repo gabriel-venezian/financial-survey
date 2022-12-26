@@ -69,6 +69,16 @@ input[type="checkbox"] {
   margin: 0;
 }
 
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+  resize: none; 
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 1080px) {
   select {
     padding-inline-start: 3.7rem;
