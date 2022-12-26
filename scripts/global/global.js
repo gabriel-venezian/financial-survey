@@ -17,9 +17,21 @@ document.querySelectorAll("select").forEach(resizeSelect);
 document.body.addEventListener("change", (e) => {
   if (e.target.matches("select")) {
     resizeSelect(e.target)
-    console.log(e.target)
+  } else if (e.target.type == "checkbox") {
+    let checkboxList = Array.from(document.querySelectorAll("input[type='checkbox']"));
+    let checkboxChecked = checkboxList.find(checkbox => checkbox.checked == true);
+
+    if (checkboxChecked) {
+      checkboxList.forEach(checkbox => {
+        checkbox.required = false;
+      });
+    } else {
+      checkboxList.forEach(checkbox => {
+        checkbox.required = true;
+      });
+    }
   }
-})
+});
 
 function resizeSelect(sel) {
   let optTextContent = sel.selectedOptions[0].textContent;
@@ -49,9 +61,11 @@ function skipStep(currentUrl) {
   let surveyAnswers = JSON.parse(localStorage.getItem("survey-answers"));
 
   if (surveyAnswers != null) {
-    surveyAnswers[currentStep].skipped = true;
-    surveyAnswers[currentStep].questions = {};
-    surveyAnswers[currentStep].answers = {};
+    surveyAnswers[currentStep] = {
+      skipped: true,
+      questions: {},
+      answers: {}
+    }
 
     localStorage.setItem("survey-answers", JSON.stringify(surveyAnswers));
   } else {
