@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Survey - Step 3</title>
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="step step-3">
+    <div class="step-container step-3-container">
+      <img src="./images/illustration-step-3.svg" alt="">
+      <form action="./step-4.html" id="step_3_form">
+        <label class="font-bold-s" for="loss_details">If you or someone close to you has already made a loss on the investment, write down the details</label>
+        <textarea class="font-normal-s" name="loss-details" id="loss_details" cols="30" rows="5" maxlength="130" onkeyup="textAreaCounter(this)" required></textarea>
+        <span id="charactersCounter">0/130 characters</span>
+
+        <nav>
+          <a class="btn-sm" href="./step-2.html">Back</a>
+          <input type="submit" class="btn-sm" href="./step-4.html" value="Next"></a>
+          <a class="btn-sm" onclick="skipStep(document.URL)" href="./step-4.html">Skip</a>
+        </nav>
+      </form>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="./scripts/global/global.js"></script>
+  <script type="text/javascript" src="./scripts/step-3/step-3.js"></script>
+</body>
+
+</html>

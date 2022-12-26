@@ -1,0 +1,46 @@
+.step-3-container img {
+  margin-block-start: 6rem;
+  margin-block-end: 1rem;
+}
+
+.step-3-container form label {
+  display: block;
+  max-inline-size: 27ch;
+  margin-block-end: 1rem;
+}
+
+.step-3-container form textarea {
+  border: 1px solid #BFBFBF;
+  border-radius: 2rem;
+  margin-block-end: .5rem;
+  inline-size: calc(100% - 3rem);
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+}
+
+.step-3-container form span {
+  display: block;
+  margin-block-end: 2.3rem;
+  font: 400 1.2rem/1.2rem "Roboto", sans-serif;
+  color: #101010;
+}
+
+@media (min-width: 1080px) {
+  .step-3 .step-3-container {
+    grid-template-rows: 30.2rem 25.4rem auto;
+  }
+
+  .step-3-container img {
+    block-size: 52.801rem;
+  }
+
+  .step-3-container form {
+    max-inline-size: 51.1rem;
+    margin-block-start: 17.5rem;
+  }
+
+  .step-3-container form span {
+    margin-block-end: 6.2rem;
+    font: 400 1.6rem/1.6rem "Roboto", sans-serif;
+  }
+}
