@@ -80,3 +80,14 @@ function skipStep(currentUrl) {
     localStorage.setItem("survey-answers", JSON.stringify(surveyAnswers));
   }
 }
+
+/* Text Area Counter */
+function textAreaCounter(inputText) {
+  let length = inputText.value.length;
+
+  if (length > 0) {
+    charactersCounter.innerText = `${length}/130 characters`;
+  } else {
+    charactersCounter.innerText = `0/130 characters`;
+  }
+};
