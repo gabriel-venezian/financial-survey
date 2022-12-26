@@ -62,7 +62,8 @@ select:hover {
 }
 
 input[type="submit"],
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
   border: none;
   cursor: pointer;
   margin: 0;

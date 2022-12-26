@@ -1,9 +1,15 @@
+/* step and step-container*/
 .step {
   max-inline-size: 48rem;
   margin-inline: auto;
 }
 
+.step-container img {
+  margin-inline: auto;
+}
+
 .step-container form {
+  max-inline-size: fit-content;
   margin-inline: auto;
 }
 
@@ -21,17 +27,20 @@
   max-inline-size: 30.2rem;
 }
 
-.step-container form nav a, 
+.step-container form nav a,
 .step-container form nav input {
   inline-size: calc(50% - 0.9rem);
   margin: 0;
 }
 
 .step-container form nav a:nth-child(3) {
-  inline-size: 100%;
+  inline-size: 30.2rem;
 }
 
-.btn, .btn-home, .btn-sm {
+/* btn and its variations */
+.btn,
+.btn-home,
+.btn-sm {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,11 +63,14 @@
   font: 700 1.6rem/1.8rem "Roboto", sans-serif;
 }
 
-.btn:hover, .btn-home:hover, .btn-sm:hover {
+.btn:hover,
+.btn-home:hover,
+.btn-sm:hover {
   color: var(--clr-black);
   background-color: var(--clr-yellow);
 }
 
+/* select-wrapper */
 .select-wrapper {
   position: relative;
 }
@@ -77,35 +89,46 @@
   content: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 18 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.8851 0H2.11493C0.446065 0 -0.48877 1.92338 0.542289 3.23564L7.42736 11.9985C8.22812 13.0176 9.77188 13.0176 10.5726 11.9985L17.4577 3.23564C18.4888 1.92339 17.5539 0 15.8851 0Z' fill='%233EB25E'/%3E%3C/svg%3E%0A");
 }
 
-.radio-group {
+/* radio-group and checkbox-group*/
+.radio-group,
+.checkbox-group {
   position: relative;
   display: flex;
 }
 
-.radio-group label {
+.radio-group label,
+.checkbox-group label {
   display: flex;
   align-items: center;
   gap: .8rem;
 }
 
-.radio-group input[type='radio'] {
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
   position: fixed;
   inline-size: 1.5rem;
   block-size: 1.5rem;
   opacity: 0;
 }
 
-.radio-group label:before {
+.radio-group label::before,
+.checkbox-group label::before  {
   content: "";
   display: inline-block;
   inline-size: 1.5rem;
   block-size: 1.5rem;
   border-radius: 50%;
-  background-color: rgba(62, 178, 94, 0.3);
-
+  background-color: var(--clr-green-transparent);
 }
 
-.radio-group input[type=radio]:checked + label:after {
+.checkbox-group label::before {
+  inline-size: 1.382rem;
+  block-size: 1.382rem;
+  border-radius: .2rem;
+}
+
+.radio-group input[type="radio"]:checked+label::after,
+.checkbox-group input[type="checkbox"]:checked+label::after {
   content: "";
   border-radius: 50%;
   display: block;
@@ -114,9 +137,17 @@
   block-size: 1.5rem;
   inline-size: 1.5rem;
   position: absolute;
-  background: #3EB25E;
+  cursor: pointer;
+  background-color: var(--clr-green);
 }
 
+.checkbox-group input[type="checkbox"]:checked+label::after {
+  inline-size: 1.382rem;
+  block-size: 1.382rem;
+  border-radius: .2rem;
+}
+
+/* Media queries */ 
 @media (max-width: 478px) {
   .step-container {
     padding-inline: 2rem;
@@ -159,11 +190,15 @@
     row-gap: 1.5rem;
     max-inline-size: 41.8rem;
   }
-  
-  .step-container form nav .btn-sm  {
+
+  .step-container form nav .btn-sm {
     block-size: 3.6rem;
     inline-size: calc(50% - 1.35rem);
     padding: 0;
+  }
+
+  .step-container form nav a:nth-child(3) {
+    inline-size: 41.8rem;
   }
 
   .btn-sm {
@@ -171,7 +206,7 @@
   }
 
   .select-wrapper .resizable-select {
-   block-size: 5.2rem; 
+    block-size: 5.2rem;
   }
 
   .select-wrapper::before {
@@ -188,20 +223,40 @@
     gap: 1.1rem;
   }
 
-  .radio-group + .radio-group{
+  .checkbox-group label {
+    gap: 2.4rem;
+  }
+
+  .radio-group+.radio-group, 
+  .checkbox-group+.checkbox-group {
     margin-block-start: .6rem;
   }
 
-  .radio-group input[type='radio'],
+  .radio-group input[type="radio"],
   .radio-group label:before {
     inline-size: 2.5rem;
     block-size: 2.5rem;
   }
-  
-  .radio-group input[type=radio]:checked + label:after {
+
+  .checkbox-group input[type="checkbox"],
+  .checkbox-group label:before {
+    inline-size: 2.6rem;
+    block-size: 2.6rem;
+    border-radius: .5rem;
+  }
+
+  .radio-group input[type="radio"]:checked+label:after {
     inset-block: .3rem;
     block-size: 2.5rem;
     inline-size: 2.5rem;
+    border-radius: .5rem;
+  }
+
+  .checkbox-group input[type="checkbox"]:checked+label:after {
+    inset-block: .3rem;
+    block-size: 2.6rem;
+    inline-size: 2.6rem;
+    border-radius: .5rem;
   }
 }
 
