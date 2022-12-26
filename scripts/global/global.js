@@ -42,3 +42,27 @@ function resizeSelect(sel) {
     sel.style.width = "100%";
   }
 }
+
+/* Skip Step */
+function skipStep(currentUrl) {
+  let currentStep = `step${parseInt(currentUrl.split("step-")[1])}`;
+  let surveyAnswers = JSON.parse(localStorage.getItem("survey-answers")); // != null
+
+  if (surveyAnswers != null) {
+    surveyAnswers[currentStep].skipped = true;
+    surveyAnswers[currentStep].questions = {};
+    surveyAnswers[currentStep].answers = {};
+
+    localStorage.setItem("survey-answers", JSON.stringify(surveyAnswers));
+  } else {
+    surveyAnswers = {
+      [currentStep]: {
+        skipped: true,
+        questions: {},
+        answers: {}
+      }
+    }
+
+    localStorage.setItem("survey-answers", JSON.stringify(surveyAnswers));
+  }
+}
